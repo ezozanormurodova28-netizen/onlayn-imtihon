@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtihon komissiyasi va o'qituvchilar | EduTest</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-exam">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                <span class="logo-matn">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asosiyMenyu"
+                aria-controls="asosiyMenyu" aria-expanded="false" aria-label="Menyuni ochish">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="asosiyMenyu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Fanlar va testlar</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Imtihon yo'nalishlari</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html#veb">Veb tizimlar</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#axborot">Axborot tizimlari</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#baza">Ma'lumotlar bazasi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html">
+                                    <i class="bi bi-table"></i> Baholash jadvali</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="oqituvchilar.html">O'qituvchilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="natijalar.html">Natijalar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="qollanma.html">Qo'llanma</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-navy" href="index.html#imtihon-oynasi" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Imtihonni hoziroq boshlang!">
+                            <i class="bi bi-pencil-square"></i> Test topshirish
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-sky-soft py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Bosh sahifa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">O'qituvchilar</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold text-navy">Imtihon komissiyasi va o'qituvchilar</h1>
+            <p class="lead mb-0 text-secondary">Test savollarini tuzuvchi va imtihon jarayonini nazorat qiluvchi
+                mutaxassislar.</p>
+        </div>
+    </section>
+
+    <!-- 9-talab: Panel (Card) + 8-talab: Popover -->
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-primary text-center shadow-sm">
+                    <div class="card-header bg-primary text-white fw-bold">Veb tizimlar fani o'qituvchisi</div>
+                    <div class="card-body">
+                        <div class="avatar-doira rounded-circle mx-auto mb-3">JI</div>
+                        <h2 class="card-title h4 fw-bold text-navy">Jumanov I.</h2>
+                        <p class="mb-2">
+                            <span class="badge rounded-pill bg-light text-dark border me-1">Bootstrap 5</span>
+                            <span class="badge rounded-pill bg-light text-dark border">Frontend</span>
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="index.html#imtihon-oynasi" class="btn btn-navy btn-sm">Test topshirish</a>
+                        <button type="button" class="btn btn-outline-navy btn-sm" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-title="Jumanov I."
+                            data-bs-content="Veb tizimlar va axborot tizimlarini loyihalash fanlari bo'yicha mas'ul o'qituvchi.">Batafsil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-success text-center shadow-sm">
+                    <div class="card-header bg-success text-white fw-bold">Axborot tizimlari mutaxassisi</div>
+                    <div class="card-body">
+                        <div class="avatar-doira rounded-circle mx-auto mb-3">XF</div>
+                        <h2 class="card-title h4 fw-bold text-navy">Xolnazarova F.</h2>
+                        <p class="mb-2">
+                            <span class="badge rounded-pill bg-light text-dark border me-1">Tizim tahlili</span>
+                            <span class="badge rounded-pill bg-light text-dark border">UI/UX</span>
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="index.html#imtihon-oynasi" class="btn btn-navy btn-sm">Test topshirish</a>
+                        <button type="button" class="btn btn-outline-navy btn-sm" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-title="Xolnazarova F."
+                            data-bs-content="304-guruh talabasi, onlayn imtihon veb-tizimi loyihasi muallifi.">Batafsil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-secondary text-center shadow-sm">
+                    <div class="card-header bg-secondary text-white fw-bold">Ma'lumotlar bazasi eksperti</div>
+                    <div class="card-body">
+                        <div class="avatar-doira rounded-circle mx-auto mb-3">AT</div>
+                        <h2 class="card-title h4 fw-bold text-navy">Alimov T.</h2>
+                        <p class="mb-2">
+                            <span class="badge rounded-pill bg-light text-dark border me-1">SQL</span>
+                            <span class="badge rounded-pill bg-light text-dark border">Ma'lumotlar bazasi</span>
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="index.html#imtihon-oynasi" class="btn btn-navy btn-sm">Test topshirish</a>
+                        <button type="button" class="btn btn-outline-navy btn-sm" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-title="Alimov T."
+                            data-bs-content="Relyatsion ma'lumotlar bazasi va SQL so'rovlar bo'yicha testlar muallifi.">Batafsil</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-exam pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="d-inline-flex align-items-center gap-2 text-decoration-none" href="index.html">
+                        <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                        <span class="logo-matn logo-oq">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+                    </a>
+                    <p class="small mt-3 mb-0">Bilimingizni tezkor va shaffof baholash platformasi.</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Bo'limlar</h3>
+                    <ul class="list-unstyled small">
+                        <li><a href="fanlar.html">Fanlar va baholash mezonlari</a></li>
+                        <li><a href="oqituvchilar.html">Imtihon komissiyasi</a></li>
+                        <li><a href="natijalar.html">Talabalar natijalari</a></li>
+                        <li><a href="qollanma.html">Imtihon qo'llanmasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Aloqa va yordam</h3>
+                    <p class="small mb-1"><i class="bi bi-geo-alt"></i> Samarqand shahri, SamDU</p>
+                    <p class="small mb-1"><i class="bi bi-telephone"></i> <a href="tel:+998662391234">+998 66 239 12
+                            34</a></p>
+                    <p class="small mb-2"><i class="bi bi-clock"></i> Du–Sha: 08:30–18:00</p>
+                    <a href="#" class="fs-4 me-2" data-bs-toggle="tooltip" data-bs-title="Telegram botimiz">
+                        <i class="bi bi-telegram"></i></a>
+                    <a href="#" class="fs-4" data-bs-toggle="tooltip" data-bs-title="HEMIS portali">
+                        <i class="bi bi-globe2"></i></a>
+                </div>
+            </div>
+            <p class="small text-center mt-4 mb-0 text-secondary">&copy; 2026 EduTest — Onlayn Imtihon Tizimi.
+                2-Mustaqil ish (Bootstrap 5).</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
