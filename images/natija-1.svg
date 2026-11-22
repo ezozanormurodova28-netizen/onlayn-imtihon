@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <rect width="500" height="300" rx="16" fill="#EFF6FF"/>
+  <circle cx="250" cy="135" r="70" fill="#DBEAFE" stroke="#2563EB" stroke-width="6"/>
+  <text x="250" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1E3A8A">96%</text>
+  <text x="250" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#334155">Veb tizimlar fani</text>
+</svg>

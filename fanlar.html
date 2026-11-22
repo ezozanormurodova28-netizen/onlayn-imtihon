@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanlar va baholash jadvali | EduTest</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-exam">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                <span class="logo-matn">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asosiyMenyu"
+                aria-controls="asosiyMenyu" aria-expanded="false" aria-label="Menyuni ochish">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="asosiyMenyu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Fanlar va testlar</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Imtihon yo'nalishlari</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html#veb">Veb tizimlar</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#axborot">Axborot tizimlari</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#baza">Ma'lumotlar bazasi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html">
+                                    <i class="bi bi-table"></i> Baholash jadvali</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="oqituvchilar.html">O'qituvchilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="natijalar.html">Natijalar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="qollanma.html">Qo'llanma</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-navy" href="index.html#imtihon-oynasi" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Imtihonni hoziroq boshlang!">
+                            <i class="bi bi-pencil-square"></i> Test topshirish
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-sky-soft py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Bosh sahifa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fanlar va baholash</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold text-navy">Fanlar va baholash jadvali</h1>
+            <p class="lead mb-0 text-secondary">Imtihon fanlari, savollar soni va baholash mezonlari.</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- 6-talab: Dropdown va Button-li dropdown komponentlari -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-navy dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-funnel"></i> Fan bo'yicha o'tish
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#veb">Veb tizimlar</a></li>
+                    <li><a class="dropdown-item" href="#axborot">Axborot tizimlari</a></li>
+                    <li><a class="dropdown-item" href="#baza">Ma'lumotlar bazasi</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <a href="index.html#imtihon-oynasi" class="btn btn-navy"><i class="bi bi-pencil-square"></i> Imtihon
+                    topshirish</a>
+                <button type="button" class="btn btn-navy dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Qo'shimcha amallar</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="natijalar.html"><i class="bi bi-trophy"></i> Natijalar
+                            jadvali</a></li>
+                    <li><a class="dropdown-item" href="qollanma.html"><i class="bi bi-book"></i> Imtihon qo'llanmasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3-talab: Bootstrap jadval dizayni -->
+        <h2 class="display-6 fw-bold text-navy mb-3">Imtihon fanlari va mezonlar jadvali</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered align-middle bg-white">
+                <caption>Izoh: 60% va undan yuqori ko'rsatkich imtihondan o'tgan hisoblanadi</caption>
+                <thead class="table-primary">
+                    <tr>
+                        <th>№</th>
+                        <th>Fan nomi</th>
+                        <th>Ajratilgan vaqt</th>
+                        <th>O'tish bali</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="veb" class="table-light">
+                        <td colspan="4" class="fw-bold text-navy">1-blok: Dasturlash va veb texnologiyalar</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Veb tizimlar (HTML5, CSS3, Bootstrap 5)</td>
+                        <td>5 daqiqa</td>
+                        <td>60% <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip"
+                                data-bs-title="Har bir to'g'ri javob 1 ball"></i></td>
+                    </tr>
+                    <tr id="axborot" class="table-light">
+                        <td colspan="4" class="fw-bold text-navy">2-blok: Tizimli tahlil</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Axborot tizimlarini ishlab chiqish metodologiyasi</td>
+                        <td>5 daqiqa</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr id="baza" class="table-light">
+                        <td colspan="4" class="fw-bold text-navy">3-blok: Ma'lumotlar bilan ishlash</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>3</td>
+                        <td>Ma'lumotlar bazasi va SQL <span class="badge bg-warning text-dark">Asosiy</span></td>
+                        <td>5 daqiqa</td>
+                        <td>60%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer-exam pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="d-inline-flex align-items-center gap-2 text-decoration-none" href="index.html">
+                        <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                        <span class="logo-matn logo-oq">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+                    </a>
+                    <p class="small mt-3 mb-0">Bilimingizni tezkor va shaffof baholash platformasi.</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Bo'limlar</h3>
+                    <ul class="list-unstyled small">
+                        <li><a href="fanlar.html">Fanlar va baholash mezonlari</a></li>
+                        <li><a href="oqituvchilar.html">Imtihon komissiyasi</a></li>
+                        <li><a href="natijalar.html">Talabalar natijalari</a></li>
+                        <li><a href="qollanma.html">Imtihon qo'llanmasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Aloqa va yordam</h3>
+                    <p class="small mb-1"><i class="bi bi-geo-alt"></i> Samarqand shahri, SamDU</p>
+                    <p class="small mb-1"><i class="bi bi-telephone"></i> <a href="tel:+998662391234">+998 66 239 12
+                            34</a></p>
+                    <p class="small mb-2"><i class="bi bi-clock"></i> Du–Sha: 08:30–18:00</p>
+                    <a href="#" class="fs-4 me-2" data-bs-toggle="tooltip" data-bs-title="Telegram botimiz">
+                        <i class="bi bi-telegram"></i></a>
+                    <a href="#" class="fs-4" data-bs-toggle="tooltip" data-bs-title="HEMIS portali">
+                        <i class="bi bi-globe2"></i></a>
+                </div>
+            </div>
+            <p class="small text-center mt-4 mb-0 text-secondary">&copy; 2026 EduTest — Onlayn Imtihon Tizimi.
+                2-Mustaqil ish (Bootstrap 5).</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

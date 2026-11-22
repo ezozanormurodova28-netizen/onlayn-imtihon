@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtihon qo'llanmasi va savollar bazasi | EduTest</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-exam">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                <span class="logo-matn">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asosiyMenyu"
+                aria-controls="asosiyMenyu" aria-expanded="false" aria-label="Menyuni ochish">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="asosiyMenyu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Fanlar va testlar</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Imtihon yo'nalishlari</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html#veb">Veb tizimlar</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#axborot">Axborot tizimlari</a></li>
+                            <li><a class="dropdown-item" href="fanlar.html#baza">Ma'lumotlar bazasi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="fanlar.html">
+                                    <i class="bi bi-table"></i> Baholash jadvali</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="oqituvchilar.html">O'qituvchilar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="natijalar.html">Natijalar</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="qollanma.html">Qo'llanma</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-navy" href="index.html#imtihon-oynasi" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Imtihonni hoziroq boshlang!">
+                            <i class="bi bi-pencil-square"></i> Test topshirish
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-sky-soft py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Bosh sahifa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Qo'llanma</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold text-navy">Imtihon qo'llanmasi va savol qo'shish</h1>
+            <p class="lead mb-0 text-secondary">Talabalar uchun yo'riqnoma hamda o'qituvchilar uchun yangi savol
+                kiritish paneli.</p>
+        </div>
+    </section>
+
+    <!-- Tablar (Konteynerli menyu ichki tablari) -->
+    <section class="container py-5">
+        <ul class="nav nav-tabs" id="qollanmaTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-1-btn" data-bs-toggle="tab" data-bs-target="#tab-1"
+                    type="button" role="tab">
+                    <i class="bi bi-list-ol"></i> Topshirish tartibi
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-2-btn" data-bs-toggle="tab" data-bs-target="#tab-2" type="button"
+                    role="tab">
+                    <i class="bi bi-stopwatch"></i> Vaqt va baholash
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-3-btn" data-bs-toggle="tab" data-bs-target="#tab-3" type="button"
+                    role="tab">
+                    <i class="bi bi-shield-lock"></i> Texnik talablar
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content bg-white border border-top-0 rounded-bottom p-4 mb-5 shadow-sm">
+            <article class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                <h2 class="h4 fw-bold text-navy">Onlayn imtihon topshirish bosqichlari</h2>
+                <ol class="mb-0">
+                    <li>Bosh sahifadagi <strong>"Talaba ma'lumotlari"</strong> paneliga F.I.Sh va guruh raqamingizni
+                        kiriting.</li>
+                    <li>Imtihon topshiriladigan fanni tanlang (Veb tizimlar, Axborot tizimlari yoki Ma'lumotlar bazasi).
+                    </li>
+                    <li><strong>"Imtihonni boshlash"</strong> tugmasini bosing — taymer avtomatik ishga tushadi.</li>
+                    <li>Har bir savol uchun to'g'ri deb bilgan variantni belgilang va oxirida <strong>"Testni
+                            yakunlash"</strong> tugmasini bosing.</li>
+                </ol>
+            </article>
+            <article class="tab-pane fade" id="tab-2" role="tabpanel">
+                <h2 class="h4 fw-bold text-navy">Vaqt nazorati va ball hisoblash</h2>
+                <ul class="mb-0">
+                    <li>Har bir imtihon sessiyasi uchun 5 daqiqa (300 soniya) vaqt ajratiladi.</li>
+                    <li>Vaqt tugaganda tizim belgilangan javoblarni avtomatik qabul qilib, natijani hisoblaydi.</li>
+                    <li>60% va undan yuqori natija to'plagan talabalar imtihondan muvaffaqiyatli o'tgan hisoblanadi.
+                    </li>
+                </ul>
+            </article>
+            <article class="tab-pane fade" id="tab-3" role="tabpanel">
+                <h2 class="h4 fw-bold text-navy">Tizimning texnik imkoniyatlari</h2>
+                <p class="mb-0">Loyiha mahalliy <code>css/bootstrap.css</code>, <code>icons/bootstrap-icons.css</code>
+                    va <code>js/bootstrap.bundle.min.js</code> fayllari asosida internetga bog'liq bo'lmagan holda ham
+                    to'liq ishlaydi.</p>
+            </article>
+        </div>
+
+        <!-- Admin: Yangi savol qo'shish formasi va savollar ro'yxati -->
+        <div class="row g-4">
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white fw-bold">
+                        <i class="bi bi-plus-circle"></i> Yangi test savoli qo'shish (O'qituvchi paneli)
+                    </div>
+                    <div class="card-body">
+                        <form id="addQuestionForm" class="row g-3 needs-validation" novalidate>
+                            <div class="col-12">
+                                <label for="newSubject" class="form-label fw-semibold">Fan</label>
+                                <select class="form-select" id="newSubject">
+                                    <option value="Veb tizimlar">Veb tizimlar</option>
+                                    <option value="Axborot tizimlari">Axborot tizimlari</option>
+                                    <option value="Ma'lumotlar bazasi">Ma'lumotlar bazasi</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="newQuestionText" class="form-label fw-semibold">Savol matni</label>
+                                <input type="text" class="form-control" id="newQuestionText"
+                                    placeholder="Savol matnini kiriting..." required>
+                                <div class="invalid-feedback">Savol matnini kiriting</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="opt0" class="form-label">A variant</label>
+                                <input type="text" class="form-control" id="opt0" placeholder="1-javob" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="opt1" class="form-label">B variant</label>
+                                <input type="text" class="form-control" id="opt1" placeholder="2-javob" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="opt2" class="form-label">C variant</label>
+                                <input type="text" class="form-control" id="opt2" placeholder="3-javob" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="correctOpt" class="form-label fw-semibold">To'g'ri javob</label>
+                                <select class="form-select" id="correctOpt">
+                                    <option value="0">A variant</option>
+                                    <option value="1">B variant</option>
+                                    <option value="2">C variant</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-navy w-100">
+                                    <i class="bi bi-save"></i> Savolni bazaga saqlash
+                                </button>
+                            </div>
+                        </form>
+                        <div id="adminSaveAlert" class="alert alert-success mt-3 mb-0 d-none">
+                            <i class="bi bi-check-circle-fill me-1"></i> Yangi savol muvaffaqiyatli qo'shildi!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-dark text-white fw-bold">
+                        <i class="bi bi-collection"></i> Tizimdagi savollar ro'yxati
+                    </div>
+                    <div class="card-body">
+                        <ol class="list-group list-group-numbered" id="questionBankList"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-exam pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a class="d-inline-flex align-items-center gap-2 text-decoration-none" href="index.html">
+                        <img src="images/logo.svg" alt="EduTest Logo" width="38" height="38">
+                        <span class="logo-matn logo-oq">EduTest<small>Onlayn Imtihon Tizimi</small></span>
+                    </a>
+                    <p class="small mt-3 mb-0">Bilimingizni tezkor va shaffof baholash platformasi.</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Bo'limlar</h3>
+                    <ul class="list-unstyled small">
+                        <li><a href="fanlar.html">Fanlar va baholash mezonlari</a></li>
+                        <li><a href="oqituvchilar.html">Imtihon komissiyasi</a></li>
+                        <li><a href="natijalar.html">Talabalar natijalari</a></li>
+                        <li><a href="qollanma.html">Imtihon qo'llanmasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h5">Aloqa va yordam</h3>
+                    <p class="small mb-1"><i class="bi bi-geo-alt"></i> Samarqand shahri, SamDU</p>
+                    <p class="small mb-1"><i class="bi bi-telephone"></i> <a href="tel:+998662391234">+998 66 239 12
+                            34</a></p>
+                    <p class="small mb-2"><i class="bi bi-clock"></i> Du–Sha: 08:30–18:00</p>
+                    <a href="#" class="fs-4 me-2" data-bs-toggle="tooltip" data-bs-title="Telegram botimiz">
+                        <i class="bi bi-telegram"></i></a>
+                    <a href="#" class="fs-4" data-bs-toggle="tooltip" data-bs-title="HEMIS portali">
+                        <i class="bi bi-globe2"></i></a>
+                </div>
+            </div>
+            <p class="small text-center mt-4 mb-0 text-secondary">&copy; 2026 EduTest — Onlayn Imtihon Tizimi.
+                2-Mustaqil ish (Bootstrap 5).</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
